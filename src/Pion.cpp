@@ -7,12 +7,12 @@
 
 using namespace std;
 
-Pion::Pion(int numeroPion/*, int monEquipe*/)
+Pion::Pion(int numeroPion, int monEquipe)
 {
 
-    this->setLife(life);
-    this->id = to_string(numeroPion);
-    /*this->setEquipe(monEquipe)*/
+    this->setLife(true); //les pions sont toujours en vie donc toujours sur le plateau
+    this->equipe = monEquipe;
+    this->id =  to_string(monEquipe) + "P" + to_string(numeroPion);
     this->afficher();
 
 }
@@ -44,26 +44,18 @@ void Pion::setId(string val){
     this->id =  val;
 }
 //get la couleur de l'équipe
-string Pion::getEquipe(){
-    return this->getEquipe();
+int Pion::getEquipe(){
+    return this->equipe;
+
 }
 //set la couleur de l'équipe
-void Pion::setEquipe(string val){
+void Pion::setEquipe(int val){
     this->equipe = val;
-
-    /*
-    if (val == 1){
-        cout << "Blanc" << endl;
-    }
-    if (val == 2){
-        cout << "Noire" << endl;
-    }*/
-
 }
 
 
 //afficher les informations du pion
 void Pion::afficher(){
-    cout <<"Le pion : " << this->getId() << " Bool vie : " << getLife() /*<< "Ca couleur est : " << getEquipe()*/ << endl;
+    cout <<"Le pion : " << this->getId() << " Bool vie : " << this->getLife() << "Ca couleur est : " << this->getEquipe() << endl;
     estVivant();
 }

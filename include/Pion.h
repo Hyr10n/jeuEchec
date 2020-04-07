@@ -9,7 +9,7 @@ using namespace std;
 class Pion : public Piece
 {
     public:
-        Pion(int val);
+        Pion(int val, int val2);
         virtual ~Pion();
 
         bool getLife();
@@ -18,8 +18,8 @@ class Pion : public Piece
         string getId();
         void setId(string val);
 
-        string getEquipe();
-        void setEquipe(string val);
+        int getEquipe();
+        void setEquipe(int val);
 
 
         void afficher();
@@ -32,7 +32,7 @@ class Pion : public Piece
         string name;
         bool life;
         string id;
-        string equipe;
+        int equipe;
 
 
 
