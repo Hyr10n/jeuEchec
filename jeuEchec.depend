@@ -1,9 +1,14 @@
 # depslib dependency file v1.0
-1586514679 source:c:\users\gritv\documents\cours\c\jeuechec\main.cpp
+1586528897 source:c:\users\gritv\documents\cours\c\jeuechec\main.cpp
 	<string>
 	<iostream>
 	<stdio.h>
 	<stdlib.h>
+	<windows.h>
+	"Plateau.h"
+	<vector>
+	<cstdlib>
+	<string>
 	<Tour.h>
 	<Pion.h>
 	<Cavalier.h>
@@ -11,21 +16,21 @@
 	<Roi.h>
 	<Fou.h>
 
-1586512073 c:\users\gritv\documents\cours\c\jeuechec\include\pion.h
+1586515818 c:\users\gritv\documents\cours\c\jeuechec\include\pion.h
 	<Piece.h>
 	<string>
 
-1586508842 c:\users\gritv\documents\cours\c\jeuechec\include\piece.h
+1586515818 c:\users\gritv\documents\cours\c\jeuechec\include\piece.h
 	<string>
 
-1586509597 source:c:\users\gritv\documents\cours\c\jeuechec\src\piece.cpp
+1586524243 source:c:\users\gritv\documents\cours\c\jeuechec\src\piece.cpp
 	"Piece.h"
 	<string>
 	<iostream>
 	<stdio.h>
 	<stdlib.h>
 
-1586509573 source:c:\users\gritv\documents\cours\c\jeuechec\src\pion.cpp
+1586515818 source:c:\users\gritv\documents\cours\c\jeuechec\src\pion.cpp
 	"Pion.h"
 	<Piece.h>
 	<string>
@@ -33,7 +38,7 @@
 	<stdio.h>
 	<stdlib.h>
 
-1586510362 source:c:\users\gritv\documents\cours\c\jeuechec\src\tour.cpp
+1586515818 source:c:\users\gritv\documents\cours\c\jeuechec\src\tour.cpp
 	"Tour.h"
 	<Piece.h>
 	<string>
@@ -41,27 +46,27 @@
 	<stdio.h>
 	<stdlib.h>
 
-1586510307 c:\users\gritv\documents\cours\c\jeuechec\include\tour.h
+1586515818 c:\users\gritv\documents\cours\c\jeuechec\include\tour.h
 	<Piece.h>
 	<string>
 
-1586512048 c:\users\gritv\documents\cours\c\jeuechec\include\cavalier.h
+1586515818 c:\users\gritv\documents\cours\c\jeuechec\include\cavalier.h
 	<Piece.h>
 	<string>
 
-1586512045 c:\users\gritv\documents\cours\c\jeuechec\include\dame.h
+1586515818 c:\users\gritv\documents\cours\c\jeuechec\include\dame.h
 	<Piece.h>
 	<string>
 
-1586512035 c:\users\gritv\documents\cours\c\jeuechec\include\roi.h
+1586515818 c:\users\gritv\documents\cours\c\jeuechec\include\roi.h
 	<Piece.h>
 	<string>
 
-1586512041 c:\users\gritv\documents\cours\c\jeuechec\include\fou.h
+1586515818 c:\users\gritv\documents\cours\c\jeuechec\include\fou.h
 	<Piece.h>
 	<string>
 
-1586512304 source:c:\users\gritv\documents\cours\c\jeuechec\src\cavalier.cpp
+1586515818 source:c:\users\gritv\documents\cours\c\jeuechec\src\cavalier.cpp
 	"Cavalier.h"
 	<Piece.h>
 	<string>
@@ -69,7 +74,7 @@
 	<stdio.h>
 	<stdlib.h>
 
-1586512252 source:c:\users\gritv\documents\cours\c\jeuechec\src\dame.cpp
+1586515818 source:c:\users\gritv\documents\cours\c\jeuechec\src\dame.cpp
 	"Dame.h"
 	<Piece.h>
 	<string>
@@ -77,7 +82,7 @@
 	<stdio.h>
 	<stdlib.h>
 
-1586512215 source:c:\users\gritv\documents\cours\c\jeuechec\src\fou.cpp
+1586515818 source:c:\users\gritv\documents\cours\c\jeuechec\src\fou.cpp
 	"Fou.h"
 	<Piece.h>
 	<string>
@@ -85,11 +90,36 @@
 	<stdio.h>
 	<stdlib.h>
 
-1586513933 source:c:\users\gritv\documents\cours\c\jeuechec\src\roi.cpp
+1586515818 source:c:\users\gritv\documents\cours\c\jeuechec\src\roi.cpp
 	"Roi.h"
 	<Piece.h>
 	<string>
 	<iostream>
 	<stdio.h>
 	<stdlib.h>
+
+1586528565 source:c:\users\gritv\documents\cours\c\jeuechec\src\plateau.cpp
+	"Plateau.h"
+	<vector>
+	<cstdlib>
+	<string>
+	<windows.h>
+	<vector>
+	<cstdlib>
+	<iostream>
+
+1586528450 c:\users\gritv\documents\cours\c\jeuechec\include\plateau.h
+	<vector>
+	<cstdlib>
+	<string>
+	<windows.h>
+
+1586528415 source:c:\users\gritv\documents\cours\c\jeuechec\src\joueur.cpp
+	"Joueur.h"
+	<string>
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+
+1586528404 c:\users\gritv\documents\cours\c\jeuechec\include\joueur.h
 

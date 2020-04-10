@@ -35,11 +35,23 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Cavalier.h" />
+		<Unit filename="include/Dame.h" />
+		<Unit filename="include/Fou.h" />
+		<Unit filename="include/Joueur.h" />
 		<Unit filename="include/Piece.h" />
 		<Unit filename="include/Pion.h" />
+		<Unit filename="include/Roi.h" />
+		<Unit filename="include/Tour.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Cavalier.cpp" />
+		<Unit filename="src/Dame.cpp" />
+		<Unit filename="src/Fou.cpp" />
+		<Unit filename="src/Joueur.cpp" />
 		<Unit filename="src/Piece.cpp" />
 		<Unit filename="src/Pion.cpp" />
+		<Unit filename="src/Roi.cpp" />
+		<Unit filename="src/Tour.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

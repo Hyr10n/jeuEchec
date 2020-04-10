@@ -8,13 +8,13 @@ class Joueur
         Joueur();
         virtual ~Joueur();
 
-        string Getnom() { return nom; }
-        void Setnom(string val) { nom = val; }
+        //string getName;
+        //void setName;
 
     protected:
 
     private:
-        string nom;
+        //string name;;
 };
 
 #endif // JOUEUR_H

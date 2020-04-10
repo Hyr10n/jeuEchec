@@ -3,6 +3,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>
+#include "Plateau.h"
+#include <vector>
+#include <cstdlib>
+#include <string>
 
 #include <Tour.h>
 #include <Pion.h>
@@ -19,6 +23,7 @@ initialiserPionBlanc(){
     cout << " \n\nLes Pions Blancs" << endl;
     for(int i =1;i<=8;i++){
         Pion *monPion = new Pion(i, equipeBlanc);
+        plateau.set(1, 1, );
         //monPion->afficher();
     }
 }
@@ -152,7 +157,12 @@ int initialiserPieceEnJeu(){
     initialiserDameNoire();
 
 
-    system("cls");
+    //system("cls");
+}
+
+int creerJoueur(){
+
+
 }
 
 int menuJeu(){
@@ -162,6 +172,11 @@ int menuJeu(){
 
 int affichageDuPlateau(){
     cout << "La plateau de jeu!\nCode de Briac!" << endl;
+    Plateau plateau(8, 8);
+    plateau.set(1, 1, 2);
+    plateau.set(2, 2, 6);
+    plateau.set(4, 4, 0);
+    plateau.afficher();
 }
 
 int main()
