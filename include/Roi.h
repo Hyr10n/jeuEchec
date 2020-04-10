@@ -1,16 +1,16 @@
-#ifndef PION_H
-#define PION_H
+#ifndef ROI_H
+#define ROI_H
 
 #include <Piece.h>
 #include <string>
 
 using namespace std;
 
-class Pion : public Piece
+class Roi : public Piece
 {
     public:
-        Pion(int val, int val2);
-        virtual ~Pion();
+        Roi(int val, int val2);
+        virtual ~Roi();
 
         virtual void afficher();
 
@@ -19,4 +19,4 @@ class Pion : public Piece
     private:
 };
 
-#endif // PION_H
+#endif // ROI_H

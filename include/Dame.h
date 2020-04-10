@@ -1,16 +1,16 @@
-#ifndef PION_H
-#define PION_H
+#ifndef DAME_H
+#define DAME_H
 
 #include <Piece.h>
 #include <string>
 
 using namespace std;
 
-class Pion : public Piece
+class Dame : public Piece
 {
     public:
-        Pion(int val, int val2);
-        virtual ~Pion();
+        Dame(int val, int val2);
+        virtual ~Dame();
 
         virtual void afficher();
 
@@ -19,4 +19,4 @@ class Pion : public Piece
     private:
 };
 
-#endif // PION_H
+#endif // DAME_H
