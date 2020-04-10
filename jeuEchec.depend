@@ -1,28 +1,43 @@
 # depslib dependency file v1.0
-1586263838 source:c:\users\gritv\documents\cours\c\jeuechec\main.cpp
+1586510633 source:c:\users\gritv\documents\cours\c\jeuechec\main.cpp
 	<string>
 	<iostream>
 	<stdio.h>
 	<stdlib.h>
+	<Tour.h>
 	<Pion.h>
 
-1586263889 c:\users\gritv\documents\cours\c\jeuechec\include\pion.h
+1586510233 c:\users\gritv\documents\cours\c\jeuechec\include\pion.h
 	<Piece.h>
 	<string>
 
-1586248239 c:\users\gritv\documents\cours\c\jeuechec\include\piece.h
+1586508842 c:\users\gritv\documents\cours\c\jeuechec\include\piece.h
 	<string>
 
-1586245023 source:c:\users\gritv\documents\cours\c\jeuechec\src\piece.cpp
+1586509597 source:c:\users\gritv\documents\cours\c\jeuechec\src\piece.cpp
 	"Piece.h"
 	<string>
 	<iostream>
+	<stdio.h>
+	<stdlib.h>
 
-1586263855 source:c:\users\gritv\documents\cours\c\jeuechec\src\pion.cpp
+1586509573 source:c:\users\gritv\documents\cours\c\jeuechec\src\pion.cpp
 	"Pion.h"
 	<Piece.h>
 	<string>
 	<iostream>
 	<stdio.h>
 	<stdlib.h>
+
+1586510362 source:c:\users\gritv\documents\cours\c\jeuechec\src\tour.cpp
+	"Tour.h"
+	<Piece.h>
+	<string>
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+
+1586510307 c:\users\gritv\documents\cours\c\jeuechec\include\tour.h
+	<Piece.h>
+	<string>
 

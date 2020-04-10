@@ -2,7 +2,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <Tour.h>
 #include <Pion.h>
 using namespace std;
 /*
@@ -15,15 +15,15 @@ int initialiserTour(){
     initialiserTourNoire();
 }
 */
+
 int initialiserPionBlanc(){
  int equipeBlanc = 1;
 
     //equipe blanche -> 1
-    cout << "Les blancs" << endl;
+    cout << "Les Pions Blancs" << endl;
     for(int i =1;i<=8;i++){
         Pion *monPion = new Pion(i, equipeBlanc);
         //monPion->afficher();
-        cout << "PB" << i << endl;
     }
 }
 
@@ -31,25 +31,44 @@ int initialiserPionNoire(){
  int equipeNoire = 2;
 
     //equipe noire -> 2
-    cout << "Les noires" << endl;
+    cout << "Les Pions Noires" << endl;
     for(int i =1;i<=8;i++){
         Pion *monPion = new Pion(i, equipeNoire);
         //monPion->afficher();
-        cout << "PN" << i << endl;
+    //stocker les pions
     }
 }
 
-int initialiserPion(){
+initialiserTourBlanc(){
+int equipeBlanc = 2;
 
-    initialiserPionBlanc();
-    initialiserPionNoire();
+    //equipe noire -> 2
+    cout << "Les Tours Blanches" << endl;
+    for(int i =1;i<=2;i++){
+        Tour *maTour = new Tour(i, equipeBlanc);
+    //stocker les pions
+    }
+}
 
+initialiserTourNoire(){
+ int equipeNoire = 1;
+
+    //equipe noire -> 2
+    cout << "Les Tours Noires" << endl;
+    for(int i =1;i<=2;i++){
+        Tour *maTour = new Tour(i, equipeNoire);
+    //stocker les pions
+    }
 }
 
 int initialiserPieceEnJeu(){
-    initialiserPion();
+    initialiserPionBlanc();
+    initialiserPionNoire();
+    initialiserTourBlanc();
+    initialiserTourNoire();
+
+
     //system("cls");
-    //initialiserTour();
 }
 
 int menuJeu(){
@@ -64,7 +83,7 @@ int menuJeu(){
 }
 
 int affichageDuPlateau(){
-    cout << "La plateau de jeu!" << endl;
+    cout << "La plateau de jeu!\nCode de Briac!" << endl;
 }
 
 int main()

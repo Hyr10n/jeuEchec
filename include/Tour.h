@@ -1,24 +1,22 @@
-#ifndef PION_H
-#define PION_H
+#ifndef TOUR_H
+#define TOUR_H
 
 #include <Piece.h>
 #include <string>
 
 using namespace std;
 
-class Pion : public Piece
+class Tour : public Piece
 {
     public:
-        Pion(int val, int val2);
-        virtual ~Pion();
+        Tour(int val, int val2);
+        virtual ~Tour();
 
         virtual void afficher();
 
     protected:
 
     private:
-
-
 };
 
-#endif // PION_H
+#endif // TOUR_H

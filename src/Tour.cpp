@@ -1,4 +1,4 @@
-#include "Pion.h"
+#include "Tour.h"
 #include <Piece.h>
 #include <string>
 #include <iostream>
@@ -7,7 +7,7 @@
 
 using namespace std;
 
-Pion::Pion(int val, int val2):Piece(val, val2, "Pion")
+Tour::Tour(int val, int val2):Piece(val, val2, "Tour")
 {
 
     /*this->setLife(true); //les pions sont toujours en vie donc toujours sur le plateau
@@ -17,12 +17,12 @@ Pion::Pion(int val, int val2):Piece(val, val2, "Pion")
 
 }
 
-Pion::~Pion()
+Tour::~Tour()
 {
     //dtor
 }
 
 //afficher les informations du pion
-void Pion::afficher(){
+void Tour::afficher(){
     cout <<"L'ID : " << this->getId()  << "\nEquipe : " << this->getEquipe() << endl;
 }
