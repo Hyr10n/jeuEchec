@@ -47,6 +47,21 @@ void Piece::setEquipe(int val){
     this->equipe = val;
 }
 
+int Piece::getX(){
+     return this->x;
+}
+
+int Piece::getY(){
+    return this->y;
+}
+
+int Piece::deplacer(int dX, int dY){
+
+    this->x = dX;
+    this->y = dY;
+
+}
+
 //afficher les informations du Piece
 void Piece::afficher(){
     cout << "\nRef : " << this->getId() << "\nEquipe : " << this->getEquipe() << endl;

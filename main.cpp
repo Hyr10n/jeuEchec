@@ -14,6 +14,7 @@
 #include <Dame.h>
 #include <Roi.h>
 #include <Fou.h>
+#include <Plateau.h>
 
 using namespace std;
 
@@ -21,10 +22,10 @@ initialiserPionBlanc(){
  int equipeBlanc = 2;
 
     cout << " \n\nLes Pions Blancs" << endl;
-    for(int i =1;i<=8;i++){
+    for(int i =0;i<8;i++){
         Pion *monPion = new Pion(i, equipeBlanc);
-        plateau.set(1, 1, );
-        //monPion->afficher();
+        //monPion->depl(0, i);
+        //plateau->ajouterPiece(monPion);
     }
 }
 
@@ -157,7 +158,7 @@ int initialiserPieceEnJeu(){
     initialiserDameNoire();
 
 
-    //system("cls");
+    system("cls");
 }
 
 int creerJoueur(){
@@ -170,19 +171,16 @@ int menuJeu(){
     cout << "Bienvenu sur le jeu d'Echec,\nDevelopper par Briac, Samuel et Valentin!" <<  endl;
 }
 
-int affichageDuPlateau(){
-    cout << "La plateau de jeu!\nCode de Briac!" << endl;
-    Plateau plateau(8, 8);
-    plateau.set(1, 1, 2);
-    plateau.set(2, 2, 6);
-    plateau.set(4, 4, 0);
-    plateau.afficher();
-}
-
 int main()
 {
+    Plateau* plateau = new Plateau(8, 8);
+    Pion* hector = new Pion(0, 1);
+    //hector->deplacer(3, 3);
+    //plateau->ajouterPiece(hector);
     menuJeu();
     initialiserPieceEnJeu();
-    affichageDuPlateau();
+    cout << "La plateau de jeu!\n\n" << endl;
+    plateau->afficher();
+    //plateau.set(0, 0, 2);
     return 0;
 }

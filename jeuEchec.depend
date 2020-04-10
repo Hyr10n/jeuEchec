@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1586528897 source:c:\users\gritv\documents\cours\c\jeuechec\main.cpp
+1586535638 source:c:\users\gritv\documents\cours\c\jeuechec\main.cpp
 	<string>
 	<iostream>
 	<stdio.h>
@@ -15,6 +15,7 @@
 	<Dame.h>
 	<Roi.h>
 	<Fou.h>
+	<Plateau.h>
 
 1586515818 c:\users\gritv\documents\cours\c\jeuechec\include\pion.h
 	<Piece.h>
@@ -23,7 +24,7 @@
 1586515818 c:\users\gritv\documents\cours\c\jeuechec\include\piece.h
 	<string>
 
-1586524243 source:c:\users\gritv\documents\cours\c\jeuechec\src\piece.cpp
+1586535365 source:c:\users\gritv\documents\cours\c\jeuechec\src\piece.cpp
 	"Piece.h"
 	<string>
 	<iostream>
@@ -98,7 +99,7 @@
 	<stdio.h>
 	<stdlib.h>
 
-1586528565 source:c:\users\gritv\documents\cours\c\jeuechec\src\plateau.cpp
+1586535953 source:c:\users\gritv\documents\cours\c\jeuechec\src\plateau.cpp
 	"Plateau.h"
 	<vector>
 	<cstdlib>
@@ -107,12 +108,14 @@
 	<vector>
 	<cstdlib>
 	<iostream>
+	<Piece.h>
 
-1586528450 c:\users\gritv\documents\cours\c\jeuechec\include\plateau.h
+1586535937 c:\users\gritv\documents\cours\c\jeuechec\include\plateau.h
 	<vector>
 	<cstdlib>
 	<string>
 	<windows.h>
+	<Piece.h>
 
 1586528415 source:c:\users\gritv\documents\cours\c\jeuechec\src\joueur.cpp
 	"Joueur.h"
