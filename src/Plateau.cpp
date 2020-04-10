@@ -24,12 +24,10 @@ void Plateau::afficher() {
 int valeur = 0;
         for (int y = 0; y < this->hauteur; y++) {
             for (int x = 0; x < this->largeur; x++) {
-
                     valeur = this->get(x, y);
-                    if (valeur < 10) { cout << " "; }
-                    if (valeur < 100) { cout << "  "; }
-                    if (valeur < 1000) { cout << "   "; }
-                    cout << valeur;
+                    if (valeur < 10) {  cout <<  valeur ; }
+                    if (valeur = 0) {  cout <<  "p" ; }
+
 
 
                 }

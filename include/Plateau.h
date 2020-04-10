@@ -8,10 +8,11 @@ using namespace std;
 
 class Piece{
 
+    private :
 
 
 
-
+    public :
 
 
 
@@ -27,6 +28,7 @@ class Plateau
         vector<int> tableau;
         int largeur;
         int hauteur;
+        int boole;
         int x;
         int y;
         int value;
@@ -37,7 +39,8 @@ class Plateau
         Plateau(int largeur, int hauteur){
         this->largeur = largeur;
         this->hauteur = hauteur;
-        tableau.resize(hauteur * largeur, 0);
+        tableau.resize(hauteur * largeur);
+
         }
         set(int x, int y, int value){
         this->x = x;
