@@ -2,6 +2,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
+#include <windows.h>
 
 #include <Tour.h>
 #include <Pion.h>
@@ -12,10 +13,9 @@
 
 using namespace std;
 
-int initialiserPionBlanc(){
+initialiserPionBlanc(){
  int equipeBlanc = 2;
 
-    //equipe blanche -> 1
     cout << " \n\nLes Pions Blancs" << endl;
     for(int i =1;i<=8;i++){
         Pion *monPion = new Pion(i, equipeBlanc);
@@ -23,10 +23,9 @@ int initialiserPionBlanc(){
     }
 }
 
-int initialiserPionNoire(){
+ initialiserPionNoire(){
  int equipeNoire = 1;
 
-    //equipe noire -> 2
     cout << "\n\nLes Pions Noires" << endl;
     for(int i =1;i<=8;i++){
         Pion *monPion = new Pion(i, equipeNoire);
@@ -39,7 +38,6 @@ int initialiserPionNoire(){
 initialiserTourBlanc(){
 int equipeBlanc = 2;
 
-    //equipe noire -> 2
     cout << "\n\nLes Tours Blanches" << endl;
     for(int i =1;i<=2;i++){
         Tour *maTour = new Tour(i, equipeBlanc);
@@ -50,7 +48,6 @@ int equipeBlanc = 2;
 initialiserTourNoire(){
  int equipeNoire = 1;
 
-    //equipe noire -> 2
     cout << "\n\nLes Tours Noires" << endl;
     for(int i =1;i<=2;i++){
         Tour *maTour = new Tour(i, equipeNoire);
@@ -62,7 +59,6 @@ initialiserTourNoire(){
 initialiserCavalierBlanc(){
  int equipeBlanc = 2;
 
-    //equipe noire -> 2
     cout << "\n\nLes Cavaliers Blancs" << endl;
     for(int i =1;i<=2;i++){
         Cavalier *monCavalier = new Cavalier(i, equipeBlanc);
@@ -73,7 +69,6 @@ initialiserCavalierBlanc(){
 initialiserCavalierNoire(){
  int equipeNoire = 1;
 
-    //equipe noire -> 2
     cout << "\n\nLes Cavaliers Noires" << endl;
     for(int i =1;i<=2;i++){
         Cavalier *monCavalier = new Cavalier(i, equipeNoire);
@@ -85,7 +80,6 @@ initialiserCavalierNoire(){
 initialiserFouBlanc(){
  int equipeBlanc = 2;
 
-    //equipe noire -> 2
     cout << "\n\nLes Fou Blancs" << endl;
     for(int i =1;i<=2;i++){
         Fou *monFou = new Fou(i, equipeBlanc);
@@ -97,7 +91,6 @@ initialiserFouBlanc(){
 initialiserFouNoire(){
  int equipeNoire = 1;
 
-    //equipe noire -> 2
     cout << "\n\nLes Fou Noires" << endl;
     for(int i =1;i<=2;i++){
         Fou *monFou = new Fou(i, equipeNoire);
@@ -159,18 +152,12 @@ int initialiserPieceEnJeu(){
     initialiserDameNoire();
 
 
-    //system("cls");
+    system("cls");
 }
 
 int menuJeu(){
     int jouer;
     cout << "Bienvenu sur le jeu d'Echec,\nDevelopper par Briac, Samuel et Valentin!" <<  endl;
-    cout << "Souhaitez-vous jouer ? 1 = NON | 2 = OUI : " << endl;
-    cin >> jouer;
-    if (jouer != 1) {
-        cout << "fin du jeu!" <<  endl;
-        return 0;
-    }
 }
 
 int affichageDuPlateau(){
